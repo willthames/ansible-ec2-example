@@ -1,0 +1,3 @@
+Host *.compute.amazonaws.com
+User ec2-user
+IdentityFile ~/.ssh/awskey.pem

@@ -1,0 +1,18 @@
+---
+- hosts: all
+  connection: local
+
+  tasks:
+  - name: create ec2 instance
+    action: 
+      module: ec2 
+      zone: "{{ zone }}"
+      image: "{{ image }}"
+      instance_type: "{{instance_type}}"
+      state: present
+      region: "{{ region }}"
+      vpc_subnet_id: "{{ subnet }}"
+      group: "{{ security_group }}"
+      key_name: "{{ sshkey }}"
+      instance_tags: 
+        name: "{{inventory_hostname}}"
