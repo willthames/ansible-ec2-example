@@ -1,3 +1,14 @@
 region: ap-southeast-2
 image: ami-5ba83761 
 sshkey: YOURKEYNAME
+
+# v1
+customerdb_dbname: customers
+storedb_dbname: store
+
+# v2
+databases:
+  customerdb:
+    dbname: customers
+  storedb:
+    dbname: store

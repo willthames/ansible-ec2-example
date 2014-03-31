@@ -1,1 +1,16 @@
 security_group: sg-24bfb446
+
+# v1
+customerdb_host: db1.prod.example.com
+customerdb_port: 3306
+storedb_host: db2.prod.example.com
+storedb_port: 3306
+
+# v2
+databases:
+  customerdb:
+    host: db1.prod.example.com
+    port: 3306
+  storedb:
+    host: db2.prod.example.com
+    port: 3306

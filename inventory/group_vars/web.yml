@@ -1,0 +1,10 @@
+# v1
+customerdb_user: webapp
+storedb_user: webapp
+
+# v2
+databases:
+  customerdb:
+    user: webapp
+  storedb:
+    user: webapp
