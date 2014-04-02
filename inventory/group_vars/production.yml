@@ -1,4 +1,5 @@
 security_group: sg-24bfb446
+env: production
 
 # v1
 customerdb_host: db1.prod.example.com

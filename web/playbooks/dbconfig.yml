@@ -1,7 +1,7 @@
 - hosts: web
   connection: local
   vars_files:
-  - '../../secrets/dbsupersecrets.yml'
+  - '../../secrets/{{env}}/dbsecrets.yml'
 
   tasks:
   - name: create v1 config.properties
