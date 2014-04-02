@@ -1,0 +1,3 @@
+{% for dbkey, db in databases.iteritems() %}
+{{ dbkey }}=jdbc:postgresql://{{db.host}}:{{db.port}}/{{db.dbname}}?user={{db.user}}&password={{db.password}}
+{% endfor %}

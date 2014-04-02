@@ -1,0 +1,11 @@
+- hosts: web
+  connection: local
+  vars_files:
+  - '../../secrets/dbsupersecrets.yml'
+
+  tasks:
+  - name: create v1 config.properties
+    action: template src=../templates/config.properties.tmpl.v1 dest=/tmp/config.properties.v1
+
+  - name: create v2 config.properties
+    action: template src=../templates/config.properties.tmpl.v2 dest=/tmp/config.properties.v2

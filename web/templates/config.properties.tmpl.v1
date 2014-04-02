@@ -1,0 +1,2 @@
+customerdb=jdbc:postgresql://{{customerdb_host}}:{{customerdb_port}}/{{customerdb_dbname}}?user={{customerdb_user}}&password={{customerdb_password}}
+storedb=jdbc:postgresql://{{storedb_host}}:{{storedb_port}}/{{storedb_dbname}}?user={{storedb_user}}&password={{storedb_password}}

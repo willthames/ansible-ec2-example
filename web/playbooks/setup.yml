@@ -1,0 +1,13 @@
+- hosts: {{env}}
+  
+  vars_files:
+  - "../vars/{{env}}.yml"
+  - "../../private/vars/{{env}}.yml"
+
+  tasks:
+  - name: install application
+
+  - name: setup DB
+
+  - name: start application
+
